@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?> <web-app xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee   http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+	<display-name>mybbs</display-name>
+  <servlet>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>servlet.LoginServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>TiebaServlet</servlet-name>
+    <servlet-class>servlet.TiebaServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ReplyServlet</servlet-name>
+    <servlet-class>servlet.ReplyServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>SendItemServlet</servlet-name>
+    <servlet-class>servlet.SendItemServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>InfoExchServlet</servlet-name>
+    <servlet-class>servlet.InfoExchServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ChatServlet</servlet-name>
+    <servlet-class>servlet.ChatServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>RegServlet</servlet-name>
+    <servlet-class>servlet.RegServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>IconServlet</servlet-name>
+    <servlet-class>servlet.IconServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ShopServlet</servlet-name>
+    <servlet-class>servlet.ShopServlet</servlet-class>
+  </servlet>
+
+
+
+
+
+
+<context-param>
+    <param-name>encoding</param-name>
+    <param-value>UTF-8</param-value>
+  </context-param>
+
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/pages/bootstrap/loginservlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>RegServlet</servlet-name>
+    <url-pattern>/pages/bootstrap/regservlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>TiebaServlet</servlet-name>
+    <url-pattern>/pages/bootstrap/tiebaservlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ReplyServlet</servlet-name>
+    <url-pattern>/pages/bootstrap/replyservlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SendItemServlet</servlet-name>
+    <url-pattern>/pages/bootstrap/senditemservlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>InfoExchServlet</servlet-name>
+    <url-pattern>/pages/bootstrap/infoExchservlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ChatServlet</servlet-name>
+    <url-pattern>/pages/bootstrap/chatservlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>IconServlet</servlet-name>
+    <url-pattern>/pages/bootstrap/iconservlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ShopServlet</servlet-name>
+    <url-pattern>/pages/bootstrap/shopservlet</url-pattern>
+  </servlet-mapping>
+   <filter>
+    <display-name>EncodingFilter</display-name>
+    <filter-name>EncodingFilter</filter-name>
+    <filter-class>filter.EncodingFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>EncodingFilter</filter-name>
+    <url-pattern>/*</url-pattern>
+  </filter-mapping>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
+</web-app>
